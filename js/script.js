@@ -83,6 +83,25 @@
             smartSpeed: 700,
             dots: true,
             margin: 10,
+            responsive: {
+                // breakpoint from 0 up
+                0: {
+                    items: 1,
+                    dots: true
+                },
+                // breakpoint from 480 up
+                480: {
+                    items: 2,
+                    dots: true
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 3,
+                },
+                995: {
+                    items: 4
+                }
+            }
         });
 
         var dot = $('.client_slides .owl-dot');
@@ -92,6 +111,33 @@
                 $(this).html('0').append(index);
             } else {
                 $(this).html(index);
+            }
+        });
+
+        $('.video_slides').owlCarousel({
+            items: 3,
+            loop: true,
+            autoplay: true,
+            smartSpeed: 700,
+            dots: true,
+            responsive: {
+                // breakpoint from 0 up
+                0: {
+                    items: 1,
+                    dots: true
+                },
+                // breakpoint from 480 up
+                480: {
+                    items: 2,
+                    dots: true
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 3,
+                },
+                995: {
+                    items: 3
+                }
             }
         });
 
@@ -105,10 +151,12 @@
                 // breakpoint from 0 up
                 0: {
                     items: 1,
+                    dots: true
                 },
                 // breakpoint from 480 up
                 480: {
                     items: 2,
+                    dots: true
                 },
                 // breakpoint from 768 up
                 768: {
