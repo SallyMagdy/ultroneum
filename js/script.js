@@ -119,7 +119,10 @@
             loop: true,
             autoplay: true,
             smartSpeed: 700,
+            lazyLoad: true,
             dots: true,
+            video: true,
+            videoHeight: 300,
             responsive: {
                 // breakpoint from 0 up
                 0: {
@@ -282,5 +285,16 @@
         hour: 20,
         minute: 30
     })
+
+
+    // $(window).scroll(function() {
+    //     var hT = $('.roadmap').offset().top,
+    //         hH = $('.roadmap').outerHeight(),
+    //         wH = $(window).height(),
+    //         wS = $(this).scrollTop();
+    //     if (wS > (hT + hH - wH)) {
+    //         $('.vertical-social').hide();
+    //     }
+    // });
 
 })(jQuery);

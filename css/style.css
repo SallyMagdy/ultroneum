@@ -46,7 +46,7 @@
     h4,
     h5,
     h6 {
-        font-family: 'terminat', sans-serif;
+        /* font-family: 'terminat', sans-serif; */
         color: #fff;
         line-height: 1.4;
         font-weight: 500;
@@ -1752,7 +1752,7 @@
     }
     
     #section_5-slider-circle .data_cir {
-        top: 0;
+        /* top: 0; */
         position: absolute;
         margin-left: -8px;
         margin-top: -16px;
@@ -2109,6 +2109,7 @@
     
     .roadmap {
         position: relative;
+        padding-bottom: 150px;
     }
     
     .roadmap:before {
@@ -4250,30 +4251,32 @@
         max-width: 250px;
     }
     
-    .box-img3 {
+    .box-img3 {}
+    
+    .box-img4 {
         width: 500px;
         right: 30%;
         position: relative;
     }
     
-    .box-img4 {
-        width: 900px;
-        bottom: -650px;
-        right: -50%;
-        position: absolute;
-    }
-    
     .box-img5 {
-        width: 820px;
-        display: flex;
-        align-items: center;
-        right: 30%;
-        position: relative;
+        width: 750px;
+        bottom: -550px;
+        right: -40%;
+        position: absolute;
     }
     
     .box-img6 {
         width: 300px;
         right: 0;
+        position: relative;
+    }
+    
+    .box-img7 {
+        width: 820px;
+        display: flex;
+        align-items: center;
+        right: 30%;
         position: relative;
     }
     
@@ -4303,4 +4306,190 @@
         padding: 10px;
         font-size: 1.3rem;
         text-align: center;
+    }
+    /* Milestones */
+    
+    .milestone-box {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 100px;
+    }
+    
+    .milestone-box img {
+        align-self: stretch;
+        position: absolute;
+        top: -10%;
+    }
+    
+    .milestone-box .milestone-number {
+        opacity: .4;
+        font-weight: 800;
+        font-size: 62px;
+        color: #bdccd4;
+        letter-spacing: 0;
+        position: absolute;
+        z-index: 1;
+        left: 5px;
+        bottom: -5px;
+    }
+    
+    .milestone-box:before {
+        height: 4px;
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #171a26;
+        width: 125%;
+        padding: 0 8px;
+        top: 100%;
+        transform: translateY(40px);
+        right: 50%;
+        z-index: 1;
+    }
+    
+    .milestones .milestone-box.first:before {
+        display: none;
+    }
+    
+    .milestone-box:after {
+        background: #323e5c;
+        box-shadow: 0 5px 34px 0 rgba(0, 0, 0, .15);
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 24px;
+        position: absolute;
+        top: 100%;
+        transform: translate(-12px, 30px);
+        left: 50%;
+        z-index: 2;
+    }
+    
+    .milestone-title {
+        padding-top: 1.4rem;
+        padding-left: .5rem;
+    }
+    
+    .caps {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        color: #fff;
+    }
+    
+    .caps .left {
+        text-align: right;
+        margin-right: 10px;
+    }
+    
+    .caps .right {
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    .caps .desc {
+        color: #3fafff;
+        font-size: 12px;
+    }
+    
+    .gradientbox {
+        background: linear-gradient(to right, #20d5de 0%, #5e309d 100%);
+        border-radius: 35px;
+        position: relative;
+        min-height: 200px;
+        margin: 100px 0;
+    }
+    
+    .gradientbox .token-allocation {
+        width: 320px;
+        position: absolute;
+        left: -100px;
+        top: -60px;
+    }
+    
+    .gradientbox ul {
+        font-size: .6rem;
+    }
+    
+    .token-distribution .box-container {
+        padding: 5px;
+    }
+    
+    .chart-color {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 10px;
+        /* border-radius: 50%; */
+    }
+    
+    .operation {
+        background: #9e2886;
+    }
+    
+    .disbursement {
+        background: #ed197a;
+    }
+    
+    .private {
+        background: #8d3937;
+    }
+    
+    .pre {
+        background: #a44441;
+    }
+    
+    .stage1 {
+        background: #ba4e4b;
+    }
+    
+    .stage2 {
+        background: #c87476
+    }
+    
+    .stage3 {
+        background: #d6a2a1
+    }
+    
+    .stage4 {
+        background: #e2c2c2
+    }
+    
+    .working-team {
+        background: #5a4373
+    }
+    
+    .reserves {
+        background: #695086
+    }
+    
+    .t-department {
+        background: #765b95
+    }
+    
+    .advisors-partner {
+        background: #8164a3
+    }
+    
+    .referral {
+        background: #a190b7
+    }
+    
+    .marketing {
+        background: #bbb1ca
+    }
+    
+    .profile_area {
+        margin-top: 15%;
+        height: auto;
+    }
+    
+    .profile_area .profile-img {
+        border-radius: 50%;
+        max-width: 300px;
     }
